@@ -1,0 +1,44 @@
+html {
+    margin-left:25%;
+    margin-right: 30%;
+    background-color: rgb(240, 255, 255);
+}
+
+h1 {
+    font-size: 42px;
+}
+
+hr {
+    border-color: aquamarine;
+    margin-bottom: 30px;
+}
+
+p{
+    padding-bottom: 5px;
+}
+
+li {
+    padding-bottom: 2px;
+}
+
+.requirements {
+    margin-left: 25px;
+}
+
+.content {
+    border-left: 2px solid lightgrey;  
+    padding-left: 15px; 
+}
+
+img {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

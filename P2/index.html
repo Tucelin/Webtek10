@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>CleverNest P2</title>
+</head>
+<body>
+    <section class="intro">
+        <header>
+            <h1>
+                CleverNest P2
+            </h1>
+        </header>
+        <div>
+            IT2805 Web technology, group 10 <br>
+            Vegard Ekra, Vegard Hesselberg, Kristoffer André Lande, Erlend Espeland
+        </div>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Administrative details</h2>
+        </header>
+        <p>
+            Client name: CleverNest AS <br>
+            Website name: CleverNest <br>
+            Contact person: Lars Erik Hestnes-Lande
+        </p>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Purpose, Goal and Audience</h2>
+        </header>
+        <p>
+            The purposes for the project as outlined by the client is for the website to act as a 
+            portal for existing and potential customers of CleverNest, a company offering a range 
+            of products in the market for smart-house solutions. More broadly, the company possesses 
+            the expertise and equipment to implement fire alarms, burglary alarms and flooding alarms 
+            for residential housing, and functionality such as controlling lighting and electrical components. 
+            The goals are to offer a site where interested customers can see which local reseller 
+            offer the service where he or she lives specifically, and more generally what product 
+            packages are on offer at what price. Furthermore, the client wants subsections for product 
+            information, some sort of product demonstration, some way for existing and potential customers 
+            to reach out to CleverNest, and an overview of local companies that provide the service. 
+            The primary audience for the website will be homeowners that are interested in information 
+            about the product CleverNest delivers, want to order those products or want information about 
+            CleverNest products they are already renting. In other words, it is a group that has self-separated 
+            from the general populace: this is not a site for advertising the products to people who have 
+            never heard of them, but a resource for those who have already signed up for the service or for 
+            those who are considering it.
+            <br>
+            <br>
+            A more detailed description can be found in Project P1.
+
+        </p>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Navigation structure</h2>
+        </header>
+        <img src="img/CNSitemap.png" id="sitemap">
+        <p>
+            This is an attempt to illustrate a site organized in a clique style, with a small modification. The clique part is simple enough: every site links to every other site, through a navigation bar. Beyond that, we are considering a so-called ”splash screen” – a sleek, well-designed, minimalistic welcome screen with the CleverNest logo and perhaps a slogan. That will link to the home.html site, which will then link to all other sites (clique). So you could call it a ”pseudo clique” style with a linear beginning, which is marked in green on the diagram. The clique part is marked in blue. This seems to us as a fashionable and stylish way of organizing a site and gives a modern first impression. Depending on time and circumstance, or even if we are not happy with how it looks, we might scrap this idea and rather focus on a standard clique organization of the site. The splash idea is our own and it is not given to us by the client, so it is not an integral part of the site at all. The clique structure makes sense for our website because visitors might want to check on any of the subsections as soon as they enter: it is pointless to have a linear structure where the customer/potential customer needs to progress through several checkpoints to find the info they are interested in.
+            <br>
+            <br>
+            Furthermore, where it is natural, we will have hyperlinks to different parts of the site in the text where appropriate. For instance, in the text on home.html, there could be pertinent with a hyperlink to the price overview if it is naturally incorporated into the text. We have not planned for this specifically, so it is not in the noted in the diagram, but it is something to keep in mind. The links will then appear where reasonable. In other words, we will have more links between the sites than simply the navigation bar alone.
+        </p>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Page Layout and appearance</h2>
+        </header>
+        <p>
+            <img src="img/CNNavbar.PNG" alt="CleverNest Layout">
+            The universal elements of the website are relatively simple. The goal is to make them functional and aesthetically pleasing, without taking attention away from the actual content of the page. This is achieved by using a simple design with relatively few colors. 
+            <br>
+            <br>
+            The most prominent universal feature is the navbar, which contains links to all the pages. This way we ensure that every page is accessible from every other, which was one of the non-functional requirements. The navbar will stick to the top of the screen, to make it easy to access at all times. If we manage, we will make it so that it disappears when scrolling down, and reappears when scrolling up, so that it doesn’t occupy unnecessary space while browsing. Using the logo in the navbar will also help with the branding of the site. The logo is a link pointing to the home page. At the bottom of the page, there will be a footer to provide some basic information on every page.
+            <br>
+            <br>
+            The color scheme of the site will be based on the colors used in the CleverNest logo. This creates a consistent and recognizable branding for the site, which is also one of the requirements from P1.
+            <ul>
+                <li>Background of pages is white</li>
+                <li>Navbar and footer color: HEX #1C93B8. This color is from the CleverNest logo.</li>
+                <li>On the navbar, the box for the open page (except the home page) has a different color: HEX #59AAC4. This makes it easy to identify which page you are currently on.</li>
+                <li>When hovering the mouse over a link in the navbar, the box will change to the same color: HEX #59AAC4.</li>
+                <li>Link color: HEX #00A588. This color is from the CleverNest logo.</li>
+            </ul>
+            The font, sizes and line heights are chosen primarily to make text easily legible, but also to create a feeling of space on the website that makes it easy for the content to draw attention.
+            <ul>
+                <li>Font: Montserrat. This is similar to the font used in other marketing materials from CleverNest. Back-up font is Arial.</li>
+                <li>Font size:</li>
+                <ul>
+                    <li>Navbar 18pt</li>
+                    <li>Footer 12pt</li>
+                    <li>Paragraph header 20pt</li>
+                    <li>Other text 16pt</li>
+                </ul>
+                <li>Line-height: 1,5</li>
+            </ul>
+            A couple of features of the design ensures that the page works on a variety of screen sizes. First, the content of each page is relatively simple. There will not be a lot of layered elements, or elements where it is critical that they always remain in the exact same position in relation to each other. This makes the site work well even when some boxes/elements are reordered for smaller screen sizes. We will also use max-width for containing boxes, so they will not overflow the viewport when the screen size is smaller. Because our audience largely consists of homeowners with some competence and interest in technology, we assume that most of them own a device other than a mobile phone to view the website. Therefore, we will not guarantee that the design works flawlessly on screens as small as a typical mobile phone.
+        </p>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Content</h2>
+        </header>
+        
+        <h3>Splash.html</h3>
+        <p>
+            The welcoming site is mostly designed, and not filled with any content in particular. While its existence is still not completely decided upon, its design is also subject to change. We might add a slogan, different color scheme, a slightly different button, etc.
+            <br>
+            <br>
+            <img src="img/CNSplash.PNG" alt="CleverNest Splash">
+        </p>
+        <h3>Home.html</h3>
+        <p>
+            The home page will present the user with an introduction to what can be found on the website. We intend to do this by providing a picture with an accompanying text and a link to the page in question if the user wants to know more. The picture and text boxes are to be on alternating sides, so as to give the impression of more air between each element. With the illustrative images all down the left-hand side and the text all down the right-hand side, it looks pretty bland. Moreover, images stacked on top of one another will quickly blend into another and look ugly if they’re differently proportioned. Each image is relevant to the page it points to, along with a summary paragraph of text, also relevant.
+            
+            <br>
+            <br>
+            There are 3 sections. Each consists of a short paragraph of text with a header and an image. The text is twice as wide as the image. The whole section is a link to the page with more information on the relevant topic.
+            <br>
+            <br>
+            The sections will link to, starting from the top
+            <ul>
+                <li>Pakker</li>
+                <li>Finn din leverandør</li>
+                <li>Support</li>
+            </ul>
+            <img src="img/CNHome.PNG" alt="CleverNest Home">
+        </p>
+
+        <h3>Packages.html</h3>
+        <p>
+            The packages page will list the package solutions available for sale with descriptions of each of the packages. We will have short paragraphs of text and illustrative photographs of distinguishing features for each package. We will have an image carousel on this page in order to demonstrate the product. It is hard for us to know what sort of assets will be available, if any, so we will adapt to whatever we are handed. If necessary we will create some simplistic stand-ins, but we are assuming some sort of concept art is available.
+            <br>
+            <br>
+            By doing this we will satisfy the goal given to us by the client - which is to provide an informative product demonstration.
+            <br>
+            <br>
+            The page will consist of 3 main sections:
+            <ul>
+                <li>The image carousel will be at the top of the page and span the width of the main column. Below the actual image will be a text which can change together with the image.</li>
+                <li>Next is a section presents information about the basic package. This will be the longest text on the page. The accompanying image will break the text in the top left corner of the section.</li>
+                <li>Then will be a number of sections listing various products that can be purchased from CleverNest. Each will have a product image on the left, and a text presenting the product.</li>
+            </ul>
+            <img src="img/CNPackages1.PNG" alt="CleverNest Packages 1">
+            <br>
+            <br>
+            <img src="img/CNPackages2.PNG" alt="CleverNest Packages 2">
+            <ul>
+                <li>listing the different product packages and a short description for each</li>
+            </ul>
+        </p>
+
+        <h3>Providers near you - Providers.html</h3>
+        <p>
+            This page will have a page where you see the providers of CleverNest, and an option to write your postal code into a field, which will give one or more providers matching that postal code. This will be done with JavaScript, which will fetch the correct output from a list of postcodes. An actual list of available postcodes might not yet exist as it is a product in development, in which case we will fake the output.
+            <br>
+            <br>
+            <img src="img/CNProviders.png" alt="CleverNest Providers">
+            This will ensure that the goal of putting the customer into contact with a local provider is fulfilled.
+        </p>
+
+        <h3>Prices.html</h3>
+        <p>
+            The prices page will contain information about the prices of the packages listed on the packages page, in a manner similar to how telephone companies show what different subscriptions contain. This will be displayed in an easy-to-read table with the classical CROSS and CHECKMARK for does not contain/contains, respectively. 
+            <br>
+            <br>
+            <img src="img/CNPrices.png" alt="CleverNest Prices">
+        </p>
+
+        <h3>About.html</h3>
+        <p>
+            A short history of the company, central employees (manager, CEO, others if applicable) with photographs, central tenets of their business, values, strategies, where their physical office is, a little bit about the tech, etc. Just general information.
+            <br>
+            <br>
+            <img src="img/CNAbout.png" alt="CleverNest About">
+        </p>
+
+        <h3>Support.html</h3>
+        <p>
+            The support page will let the user reach out to CleverNest for inquiries about the products they deliver, as well as downloadable brochures, catalogs, user manuals. Both of these requirements will be coded with JS.
+            <br>
+            <br>
+            <img src="img/CNSupport.png" alt="CleverNest Support">
+        </p>
+
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Minimum requirements</h2>
+        </header>
+        <p>
+            We intend to fulfill the minimum requirements for the application in this way:
+            <ol>
+                <li>A Javascript function that takes in the users postal code and returns a CleverNest provider in their area. The intent is to give the impression that a relevant electricity provider is given, but in reality, we will have an array of actual providers with each of them assigned to a range of postal codes. </li>
+                <li>A Javascript function that will scroll through a set of pictures (image carousel) with links to the other pages on the website. We can also put news in this carousel.</li>
+                <li>A Javascript function on the support page where the user can input their email or contact information along with a message for CleverNest to start a conversation and get help.</li>
+                <li>A Javascript function to download the catalog where the user can see descriptions of specific products.</li>
+                <li>A Javascript function to automatically update the copyright year in the footer to current year.</li>
+            </ol>
+        </p>
+    </section>
+    <hr>
+    <section class="content">
+        <header>
+            <h2>Plan</h2>
+        </header>
+        <h3>Organizational scheme</h3>
+        <p>
+            All of the following files will be located in a folder named CleverNest, which will be created in the coding phase. As we are not entirely certain of how many packages there are, we cannot have a set number of images planned at this point in time. Think of this as a guideline with X amount of packages and providers. And again, the splash.html and belonging assets might be scrapped completely depending on time, circumstance and/or resources.
+        </p>
+        <h3>List of files and folders</h3>
+        <ul>
+            <li>splash.html</li>
+            <li>home.html</li>
+            <li>packages.html</li>
+            <li>packages.html</li>
+            <li>providers.html </li>
+            <li>prices.html</li>
+            <li>about.html</li>
+            <li>support.html</li>
+            <li>images</li>
+            <ul>
+                <li>images of elecricity providers</li>
+                <li>images of packages</li>
+                <li>Images of employees</li>
+                <li>checkmark.png</li>
+                <li>cross.png</li>
+                <li>splash_background.png</li>
+                <li>splash_logo.png</li>
+                <li>logo.png</li>
+            </ul>
+            <li>main.css</li>
+            <li>scripts.js</li>
+        </ul>
+        <table>
+            <tr>
+                <th><strong>Filename</strong></th>
+                <th><strong>Description</strong></th>
+                <th><strong>In Charge</strong></th>
+                <th><strong>Deadline</strong></th>
+            </tr>
+            <tr>
+                <td>home.html</td>
+                <td>Page describing the company</td>
+                <td>Erlend Espeland</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>packages.html</td>
+                <td>Page displaying the different packages</td>
+                <td>Kristoffer Lande</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>providers.html</td>
+                <td>Page displaying different providers</td>
+                <td>Vegard Hesselberg</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>prices.html</td>
+                <td>Page displaying prices</td>
+                <td>Vegard Ekra</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>about.html</td>
+                <td>Page describing the company</td>
+                <td>Vegard Ekra</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>support.html</td>
+                <td>Page for support inquiries</td>
+                <td>Vegard Hesselberg</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>Images of electricity providers</td>
+                <td>Logos for distributors</td>
+                <td>Kristoffer Lande</td>
+                <td>October 15th, 2018</td>
+            </tr>
+            <tr>
+                <td>Images of products</td>
+                <td>Product images from CleverNest</td>
+                <td>Kristoffer Lande</td>
+                <td>October 15th, 2018</td>
+            </tr>
+            <tr>
+                <td>Images of employees</td>
+                <td>Images of CleverNest employees</td>
+                <td>Kristoffer Lande</td>
+                <td>October 15th, 2018</td>
+            </tr>
+            <tr>
+                <td>logo.png</td>
+                <td>Logo for Clevernest in colors</td>
+                <td>Kristoffer Lande</td>
+                <td>October 15th, 2018</td>
+            </tr>
+            <tr>
+                <td>white_logo.png</td>
+                <td>Logo for Clevernest, white with transparent background.</td>
+                <td>Kristoffer Lande</td>
+                <td>October 15th, 2018</td>
+            </tr>
+            <tr>
+                <td>main.css</td>
+                <td>The CSS file containing all styling for the site</td>
+                <td>All</td>
+                <td>November 10, 2018</td>
+            </tr>
+        <tr>
+                <td>Testing</td>
+                <td>User testing </td>
+                <td>All</td>
+                <td>November 10, 2018</td>
+            </tr>
+            <tr>
+                <td>Final Controls</td>
+                <td>Double checking each file for errors, checking the javascript and css</td>
+                <td>All</td>
+                <td>November 10, 2018</td>
+            </tr>
+            <tr>
+                <td>YourProvider.js</td>
+                <td>Finding a local provider based on user input (postcode)</td>
+                <td>Vegard Hesselberg</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>ImageCarousel.js</td>
+                <td>Showing images of products, news, etc</td>
+                <td>All</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>ContactForm.js</td>
+                <td>User contact form</td>
+                <td>Vegard Ekra</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>Downloads.js</td>
+                <td>Script for downloadable documents</td>
+                <td>Erlend Espeland</td>
+                <td>October 31st, 2018</td>
+            </tr>
+            <tr>
+                <td>CopyrightYear.js</td>
+                <td>Automatically updates year in footer</td>
+                <td>Kristoffer Lande</td>
+                <td>October 31st, 2018</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
