@@ -9,19 +9,17 @@ body{
     margin-left: 10%;
 }
 
-h1{
-}
 
 li{
     list-style: none;
-    display:inline-block; /* Denne linja gjør at liste-elementene kommer på en linje 
+    display:inline-block; /* Denne linja gjør at liste-elementene kommer på samme1 linje 
     (som er vanlig i en navbar) men gjør at vi ikke kan angi bredde eller høyde på elementene i seg 
     selv, men vi kan fortsatt endre på størrelsen på ting inni dem, som tekst og bilder (se #whitelogo)*/
     padding-left: 10px;
     padding-right: 10px;  
 }
 
-.navbar{
+.navbar, footer{
     background-color: #1C93B8;
     margin-top: 0;
     padding-left: 10%;
@@ -34,5 +32,34 @@ li{
 
 #whitelogo {
     height: 35px;
-    /* Har noen problemer med å sette bildet riktig, med riktig størrelse osv sånn at det ikke fucker med andre ting. -V*/
+    /* Har noen problemer med å sette bildet riktig, med riktig størrelse osv sånn at det ikke fucker med andre ting. -VH*/
 }
+
+.title {
+    text-align: center;
+}
+
+.resources {
+    text-align: center;
+}
+
+.provimg {
+    width: 100px;
+    height: 100px;
+    background-color: #1C93B8;
+}
+
+#supportform {
+    text-align: left;
+    margin-left: 25%;
+}
+
+input {
+    width: 50%;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
+}
+

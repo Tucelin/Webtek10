@@ -18,9 +18,34 @@
         <li><a href="about.html"><h2>about</h2></a></li>
     </ul>
     <div class="content">
-        <h1>
-            Welcome to providers
+        <h1 class="title">
+            Welcome to support, how can i help u
         </h1>
+        <div class="resources">
+            <h3>Resources</h3>
+            <ul>
+                <li class="provimg"></li>
+                <li class="provimg"></li>
+                <li class="provimg"></li>
+                <li class="provimg"></li>
+            </ul>
+            <h3>Videre spørsmål?</h3>
+            <p>Fyll ut formen under, så kommer vi tilbake til deg.</p>
+            <div id="supportform">
+                <form action="#">
+                    Navn: <br>
+                    <input type="text" id="supportnavn"> <br> <br>
+                    E-post: <br>
+                    <input type="text" id="supportepost"> <br> <br>
+                    Melding: <br>
+                    <textarea id="supportmelding"></textarea> <br>
+                    <input type="submit" value="Send!" id="supportsubmit" onclick="support()">
+                </form>
+            </div>
+        </div>
     </div>
+
+    <footer>I'm footing</footer>
+    <script src="scripts/support.js"></script>
 </body>
 </html>
