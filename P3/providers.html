@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
-    <title>Document</title>
+    <title>Providers</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -18,14 +18,52 @@
         <li><a href="about.html"><h2>about</h2></a></li>
     </ul>
     <div class="content">
-        <h1>
-            Welcome to providers
+        <h1 class="title">
+            Finn din leverandør
         </h1>
+        <div class="resources">
+            <div>
+                Under finner du våre samarbeidspartnere:
+            </div>
+            <ul>
+                <li ><img class="provimg" src="img/providers/ardal.gif" alt="ardal"></li>
+                <li ><img class="provimg" src="img/providers/bodo.jpg" alt="bodø"></li>
+                <li ><img class="provimg" src="img/providers/dalane.png" alt="dalane"></li>
+                <li ><img class="provimg" src="img/providers/gudbrandsdal.png" alt="gudbrandsdal"></li>
+                <br>
+                <li ><img class="provimg" src="img/providers/hafslund.gif" alt="hafslund"></li>
+                <li ><img class="provimg" src="img/providers/hurum.png" alt="hurum"></li>
+                <li ><img class="provimg" src="img/providers/nordmore.png" alt="nordmore"></li>
+                <li ><img class="provimg" src="img/providers/polar.PNG" alt="polar"></li>
+                <br>
+                <li ><img class="provimg" src="img/providers/sognekraft.gif" alt="sognekraft"></li>
+                <li ><img class="provimg" src="img/providers/troms.png" alt="troms"></li>
+                <li ><img class="provimg" src="img/providers/trondelag.jpg" alt="trondelag"></li>
+            </ul>
+            <br>
+            <div id="providerform">
+                <h2>Skriv inn postnummeret ditt, så kan du kontakte en leverandør i ditt område</h2> <br> <br>
+                <form action="#" id="providers">
+                    <span id="postnummerlabel">Postnummer:</span> <br>
+                    <input type="number" id="postnummer" min="0000" max="9999">
+                    <input type="submit" id="providersubmit" value="Finn!"> <!-- Sikkert lurt å legge til en link til leverandørens nettside eller noe, men det kan tenkes på senere -->
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div>
+                <img src="img/logo_white.png" alt="provider logo" id="testimage" style="width: 500px;">
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
     </div>
     <footer>
         <footer style="position:fixed; bottom: 0; line-height: 40px; background-color: #1C93B8; color:white; height:40px; width: 100%; left:0;">
                     <script type="text/javascript" src="./scripts/copyrightYear.js"></script>
                 </div>
         </footer>
+        <script src="scripts/FindProviders.js"></script>
 </body>
 </html>

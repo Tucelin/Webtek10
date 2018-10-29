@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: 'Montserrat', 'Arial', sans-serif;
-    /* Lurer på om Monserrat ikke kommer med chrome vanligvis, bør diskuteres.*/
+    /* Lurer på om Montserrat ikke kommer med chrome vanligvis, bør diskuteres.*/
 }
 
 .content {
@@ -43,10 +43,14 @@ li{
     text-align: center;
 }
 
-.provimg {
+.docicon {
     width: 100px;
     height: 100px;
     background-color: #1C93B8;
+}
+
+.provimg {
+    width: 150px;
 }
 
 #supportform {
@@ -59,7 +63,15 @@ input {
 }
 
 textarea {
-    width: 50%;
+    width: 49%;
     height: 200px;
 }
 
+#postnummerlabel {
+    text-align: left;
+}
+
+#testimage {
+    background-color: red;
+    display: none;
+}
