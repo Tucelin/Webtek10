@@ -19,15 +19,33 @@ li{
     padding-right: 10px;  
 }
 
-.navbar, footer{
+.navbar {
     background-color: #1C93B8;
     margin-top: 0;
     padding-left: 10%;
     padding-right: 15%;
 }
 
+footer {
+    background-color: #1C93B8;
+    position:fixed; 
+    bottom: 0; 
+    line-height: 40px; 
+    color:white; 
+    height:40px; 
+    width: 100%; 
+    left:0;
+    padding-left: 10%;
+}
+
+
+a:link { color: white; text-decoration: none; }
+a:visited { color:white; text-decoration: none; }
+a:hover { color:white; text-decoration: underline; }
+a:active { color:white; text-decoration: underline; }
+
 #currentpage{
-    background-color: red;
+    background-color: rgb(120, 182, 201);
 }
 
 #whitelogo {
