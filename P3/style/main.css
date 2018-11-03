@@ -38,7 +38,6 @@ footer {
     padding-left: 10%;
 }
 
-
 a:link { color: white; text-decoration: none; }
 a:visited { color:white; text-decoration: none; }
 a:hover { color:white; text-decoration: underline; }
@@ -69,11 +68,6 @@ a:active { color:white; text-decoration: underline; }
 
 .provimg {
     width: 150px;
-}
-
-#supportform {
-    text-align: left;
-    margin-left: 25%;
 }
 
 input {
@@ -113,5 +107,46 @@ th, td {
 }
 
 #check, #cross {
+    text-align: center;
+}
+
+ul {
+    padding: 0px; /*lagt til fordi en rar padding på resourcene under Support gjorde at det ikke var sentrert */
+}
+
+#supportform {
+    border: 3px solid #1C93B8;
+    margin-right: auto;
+    margin-left: auto;
+    width: 480px;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #1C93B8;
+    padding-top: 3px;
+    color: white;
+}
+
+#supportepost, #supportmelding, #supportnavn {
+    width: 90%;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 2px solid white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #1C93B8;
+}
+
+#supportsubmit{
+    font-size: 14px;
+    background-color: #1C93B8;
+    border-radius: 3px;
+    border: 2px solid white;
+    margin-bottom: 5px;
+    color: white;
+    height: 30px;
+}
+
+#supportepost, #supportnavn {
     text-align: center;
 }
