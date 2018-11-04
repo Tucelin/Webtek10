@@ -4,9 +4,16 @@ body{
     /* Lurer på om Montserrat ikke kommer med chrome vanligvis, bør diskuteres.*/
 }
 
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .content {
     margin-right: 15%;
     margin-left: 10%;
+    max-width: 900px;
 }
 
 
