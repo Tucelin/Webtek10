@@ -153,3 +153,23 @@ ul {
 #supportepost, #supportnavn {
     text-align: center;
 }
+
+#pakkeListe {
+    list-style:none;
+    display: block;
+}
+
+#pakkeListe > li {
+    height: 200px;
+    width: 900px;
+}
+
+#pakkeListe > li > .image{
+    width: 200px; height: 200px;
+    float:left;
+}
+
+#pakkeListe > li > .content{
+    margin-top: 70px;
+    height: 200px;
+}
