@@ -74,14 +74,11 @@ a:active { color:white; text-decoration: underline; }
     width: 100px;
     height: 100px;
     background-color: #1C93B8;
+    vertical-align: middle;
 }
 
 .provimg {
     width: 150px;
-}
-
-input {
-    width: 50%;
 }
 
 textarea {
@@ -89,12 +86,33 @@ textarea {
     height: 200px;
 }
 
+#providers{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #postnummerlabel {
     text-align: left;
 }
 
-#testimage {
-    background-color: red;
+#postnummerinput {
+    width: 50x;
+    height: 34px;
+    font-size: 22px;
+    border: #1C93B8 solid 2px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+#providersubmit {
+    width: 50px;
+    height: 40px;
+    background-color: #1C93B8;
+    border: 0px;
+}
+
+#providerimage {
     display: none;
 }
 
