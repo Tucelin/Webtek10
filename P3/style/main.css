@@ -51,6 +51,9 @@ a:active { color:white; text-decoration: underline; }
     height: 35px;
     /* Har noen problemer med å sette bildet riktig, med riktig størrelse osv sånn at det ikke fucker med andre ting. -VH*/
 }
+#home-element {
+    vertical-align: middle;
+}
 
 .title {
     text-align: center;
