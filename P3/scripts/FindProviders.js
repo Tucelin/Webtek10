@@ -7,7 +7,7 @@ let providers = [
         max: 1800,
         extension: ".gif"},
     { 
-        provider: "gudbrandsdal", /* Gudbrandsdal Energi */
+        provider: "gudbrandsdal",
         min: 1801,
         max: 3200,
         extension: ".png"},
@@ -55,7 +55,7 @@ let providers = [
 
 let provideprovider = () => {
     for (i in providers){
-        if (document.getElementById("postnummer").value >= providers[i].min && document.getElementById("postnummer").value <= providers[i].max){
+        if (document.getElementById("postnummerinput").value >= providers[i].min && document.getElementById("postnummerinput").value <= providers[i].max){
             document.getElementById("testimage").setAttribute("src", "img/providers/" + providers[i].provider + providers[i].extension) 
             document.getElementById("testimage").style.display = "inline"
         }
