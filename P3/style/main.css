@@ -207,9 +207,23 @@ ul {
 
 /* Start of styling for "home.html" */
 
-.home__content-section--rightside-image{
+.home__content-section {
+    clear:both;
+    padding: 1em;
+}
+
+.home__content-section--heading {
+    text-align: center;
+}
+
+.home__image {
+    width: 250px;
 }
 
 .home__image--right-side{
     float: right;
+}
+
+.home__image--left-side{
+    float: left;
 }
