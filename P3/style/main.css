@@ -230,3 +230,33 @@ ul {
 .home__image--left-side{
     float: left;
 }
+
+/* End of styling for "home.html" */
+
+/* Start of styling for careousel on "packages.html" */
+
+.careousel-container {
+    width: 100%;
+}
+
+.careousel-content {
+    width: 100%;
+}
+
+.careousel-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.careousel-text {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.active-slide{
+    display: block;
+}
