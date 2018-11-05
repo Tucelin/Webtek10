@@ -212,6 +212,8 @@ ul {
     padding: 1em;
 }
 
+.home__content-section > a { color: black; text-decoration: none; }
+
 .home__content-section--heading {
     text-align: center;
 }
