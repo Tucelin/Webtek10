@@ -218,6 +218,7 @@ ul {
 
 .home__image {
     width: 250px;
+    padding: 1em;
 }
 
 .home__image--right-side{
