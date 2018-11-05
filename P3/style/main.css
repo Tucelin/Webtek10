@@ -198,3 +198,12 @@ ul {
     margin-top: 70px;
     height: 200px;
 }
+
+/* Start of styling for "home.html" */
+
+.home__content-section--rightside-image{
+}
+
+.home__image--right-side{
+    float: right;
+}
