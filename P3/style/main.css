@@ -116,26 +116,32 @@ textarea {
     display: none;
 }
 
-table, th, td {
-    border: 4px solid #1C93B8;
-    border-collapse: collapse;
+#pakketabell {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-th, td {
-    text-align: left;
+#pakketabell, th, td {
+    border: 4px solid #1C93B8;
+    border-collapse: collapse;
     padding: 10px;
 }
 
-#check {
+.check {
     background-color: #aeefb3;
 }
 
-#cross {
+.cross {
     background-color: #efaeae;
 }
 
-#check, #cross {
-    text-align: center;
+th {
+    width: 160px;
+}
+
+#tabellpris {
+    width: 70px;
 }
 
 ul {
