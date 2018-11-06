@@ -56,8 +56,9 @@ let providers = [
 let provideprovider = () => {
     for (i in providers){
         if (document.getElementById("postnummerinput").value >= providers[i].min && document.getElementById("postnummerinput").value <= providers[i].max){
-            document.getElementById("testimage").setAttribute("src", "img/providers/" + providers[i].provider + providers[i].extension) 
-            document.getElementById("testimage").style.display = "inline"
+            document.getElementById("providerimage").setAttribute("src", "img/providers/" + providers[i].provider + providers[i].extension) 
+            document.getElementById("providerimage").style.display = "inline"
+            console.log("Clicked")
         }
 
     }
