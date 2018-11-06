@@ -237,6 +237,8 @@ ul {
 
 .careousel-container {
     width: 100%;
+    min-height: 525px;
+    border-bottom: thin solid #1C93B8;
 }
 
 .careousel-content {
