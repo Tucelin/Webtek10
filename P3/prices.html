@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Priser</title>
 </head>
 <body>
@@ -21,29 +22,34 @@
         <h1>Priser</h1>
         <table id="pakketabell">
             <tr>
-                <th>Pakke</th>
+                <th class="prisheader">Pakke</th>
                 <th id="tabellpris">Pris</th>
-                <th>Gateway</th> 
-                <th>Keypad</th>
-                <th>IR-tracker</th>
-                <th>DCI</th>
+                <th class="prisheader">Gateway</th> 
+                <th class="prisheader">Keypad</th>
+                <th class="prisheader">IR-tracker</th>
+                <th class="prisheader">DCI</th>
             </tr>
             <tr>
-                <td>Komplett pakke</td>
-                <td>999,-</td>
-                <td colspan="4" class="check"><img src="img/check.png" height="50px" width="50px"></td>
+                <td class="priscelle">Komplett pakke</td>
+                <td class="priscelle">999,-</td>
+                <td colspan="4" class="priscelle" id="check"><img src="img/check.png" height="50px" width="50px"></td>
             </tr>
             <tr>
-                <td>Grunnpakken</td>
-                <td>599,-</td> 
-                <td colspan="2" class="check"><img src="img/check.png" height="50px" width="50px"></td> 
-                <td colspan="2" class="cross"><img src="img/cross.png" height="50px" width="50px"></td> 
+                <td class="priscelle">Grunnpakken</td>
+                <td class="priscelle">599,-</td> 
+                <td colspan="2" class="priscelle" id="check"><img src="img/check.png" height="50px" width="50px"></td> 
+                <td colspan="2" class ="priscelle" id="cross"><img src="img/cross.png" height="50px" width="50px"></td> 
             </tr>
         </table>
     </div>
-
     <footer>
-        <script type="text/javascript" src="./scripts/copyrightYear.js"></script>
+        <table id="footertable">
+            <tr>
+                <td class="footercell" id="footerleft">post@clevernest.no</td>
+                <td class="footercell" id="footercenter">Priser</td>
+                <td class="footercell" id="footerright"><script type="text/javascript" src="./scripts/copyrightYear.js"></script></td>
+            </tr>
+        </table>
     </footer>
 </body>
 </html>

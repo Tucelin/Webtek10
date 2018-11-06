@@ -11,8 +11,8 @@ h1 {
 }
 
 .content {
-    margin-right: 15%;
-    margin-left: 10%;
+    margin-right: auto;
+    margin-left: auto;
     max-width: 900px;
 }
 
@@ -29,20 +29,43 @@ li{
 .navbar {
     background-color: #1C93B8;
     margin-top: 0;
-    padding-left: 10%;
-    padding-right: 15%;
+    padding-left: 14%;
+    padding-right: 12%;
 }
 
 footer {
     background-color: #1C93B8;
-    position:fixed; 
+    position: fixed; 
     bottom: 0; 
-    line-height: 40px; 
-    color:white; 
-    height:40px; 
+    line-height: 15px; 
+    color: white; 
+    height: 40px; 
     width: 100%; 
     left:0;
-    padding-left: 10%;
+}
+
+#footertable {
+    width: 100%;
+}
+
+.footercell {
+    border: none;
+    padding: 10px;
+}
+
+#footerleft {
+    width: 40%;
+    text-align: left;
+}
+
+#footercenter {
+    width: 20%;
+    text-align: center;
+}
+
+#footerright {
+    width: 40%;
+    text-align: right;
 }
 
 a:link { color: white; text-decoration: none; }
@@ -68,6 +91,29 @@ a:active { color:white; text-decoration: underline; }
 
 .resources {
     text-align: center;
+}
+
+/* support table */
+
+#supporttable {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+
+.supportheader, .supportcell {
+    width: 150px;
+    border: 10px solid white;
+    background-color: #1C93B8;
+}
+
+.supportheader {
+    height: 100px;
+}
+
+.supportcell {
+    height: 30px;
 }
 
 .docicon {
@@ -116,27 +162,29 @@ textarea {
     display: none;
 }
 
+/* styling for pristabell */
+
 #pakketabell {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-#pakketabell, th, td {
+#pakketabell, .prisheader, .priscelle {
     border: 4px solid #1C93B8;
     border-collapse: collapse;
     padding: 10px;
 }
 
-.check {
+#check {
     background-color: #aeefb3;
 }
 
-.cross {
+#cross {
     background-color: #efaeae;
 }
 
-th {
+.prisheader {
     width: 160px;
 }
 
@@ -144,9 +192,13 @@ th {
     width: 70px;
 }
 
+/* slutt styling for pristabell */
+
 ul {
     padding: 0px; /*lagt til fordi en rar padding på resourcene under Support gjorde at det ikke var sentrert */
 }
+
+/* supportform */
 
 #supportform {
     border: 3px solid #1C93B8;
@@ -185,8 +237,10 @@ ul {
     text-align: center;
 }
 
+/* slutt supportform */
+
 #pakkeListe {
-    list-style:none;
+    list-style: none;
     display: block;
 }
 
@@ -208,8 +262,9 @@ ul {
 /* Start of styling for "home.html" */
 
 .home__content-section {
-    clear:both;
+    clear: both;
     padding: 1em;
+    margin-bottom: 20px;
 }
 
 .home__content-section > a { color: black; text-decoration: none; }

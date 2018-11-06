@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>Support</title>
 </head>
 <body>
@@ -23,11 +24,18 @@
         </h1>
         <div class="resources">
             <h3>Ressurser</h3>
-            <ul>
-                <li class="docicon"><a href="supportfiles/FAQ Nookbox.pdf">FAQ</a></li>
-                <li class="docicon"><a href="supportfiles/HURTIGGUIDE for brukere.pdf">Hurtigguide for brukere</a></li>
-                <li class="docicon"><a href="supportfiles/HURTIGGUIDE for installatør.pdf">Hurtiguide for installatør</a></li>
-            </ul>
+            <table id="supporttable">
+                <tr>
+                    <td class="supportheader"><a href="supportfiles/FAQ Nookbox.pdf"><img src="img/download.png" height="70px" width="70px"></a></td>
+                    <td class="supportheader"><a href="supportfiles/HURTIGGUIDE for brukere.pdf"><img src="img/download.png" height="70px" width="70px"></a></td>
+                    <td class="supportheader"><a href="supportfiles/HURTIGGUIDE for installatør.pdf"><img src="img/download.png" height="70px" width="70px"></a></td>
+                </tr>
+                <tr>
+                    <td class="supportcell"><a href="supportfiles/FAQ Nookbox.pdf">FAQ</a></td>
+                    <td class="supportcell"><a href="supportfiles/HURTIGGUIDE for brukere.pdf">Guide for brukere</a></td>
+                    <td class="supportcell"><a href="supportfiles/HURTIGGUIDE for installatør.pdf">Guide for installatører</a></td>
+                </tr>               
+            </table>
             <h3>Videre spørsmål?</h3>
             <p>Fyll ut formen under, så kommer vi tilbake til deg.</p>
             <form action="#" id="supportform">
@@ -40,13 +48,17 @@
                 <input type="submit" value="Send!" id="supportsubmit" onclick="support()">
             </form>
             <br><br><br>
-
         </div>
     </div>
-
     <footer>
-        <script type="text/javascript" src="./scripts/copyrightYear.js"></script>
+        <table id="footertable">
+            <tr>
+                <td class="footercell" id="footerleft">post@clevernest.no</td>
+                <td class="footercell" id="footercenter">Support</td>
+                <td class="footercell" id="footerright"><script type="text/javascript" src="./scripts/copyrightYear.js"></script></td>
+            </tr>
+        </table>
     </footer>
-        <script src="scripts/support.js"></script>
+    <script src="scripts/support.js"></script>
 </body>
 </html>
