@@ -174,11 +174,11 @@ textarea {
     padding: 10px;
 }
 
-#check {
+.check {
     background-color: #aeefb3;
 }
 
-#cross {
+.cross {
     background-color: #efaeae;
 }
 
