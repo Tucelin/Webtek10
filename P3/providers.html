@@ -23,12 +23,10 @@
             Finn din leverandør
         </h1>
         <div class="resources">
-            <br>
             <div id="providerform">
-                <h3>Skriv inn postnummeret ditt, så kan du kontakte en leverandør i ditt område</h3>
+                <h3>Skriv inn postnummeret ditt, så kan du kontakte en leverandør i ditt område.</h3><br>
                 <form action="#" id="providers">
-                    <span id="postnummerlabel">Postnummer:</span> <br>
-                    <input type="number" id="postnummerinput" min="0000" max="9999">
+                    <input type="number" id="postnummerinput" min="0000" max="9999" placeholder="Postnummer" onfocus="this.placeholder=''" onblur="this.placeholder='Postnummer'">
                     <input type="submit" id="providersubmit" value="Finn!"> <!-- Sikkert lurt å legge til en link til leverandørens nettside eller noe, men det kan tenkes på senere -->
                     <br>
                     <br>
@@ -37,7 +35,6 @@
                     <img src="img/logo_white.png" alt="provider logo" id="providerimage" style="width: 500px;">
                 </div>
                 <br><br>
-
                 <div>
                     Under finner du våre samarbeidspartnere:
                 </div>
