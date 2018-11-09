@@ -10,21 +10,18 @@
 </head>
 <body>
     <!-- Navbar -->
-    <ul class="navbar">
-        <li id="home-element"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></li>
-        <li id="currentpage"><a href="packages.html"><h2>Produkter</h2></a></li>
-        <li><a href="prices.html"><h2>Priser</h2></a></li>
-        <li><a href="providers.html"><h2>Leverandører</h2></a></li>
-        <li><a href="support.html"><h2>Support</h2></a></li>
-        <li><a href="about.html"><h2>Om CleverNest</h2></a></li>
-    </ul>
-
+    <div class=navbarbackground>
+        <table class="navbar">
+            <th class="navbarelement"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></th>
+            <th class="navbarelement" id="currentpage"><a class="navbarlink" href="packages.html"><h2>Produkter</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="prices.html"><h2>Priser</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="providers.html"><h2>Leverandører</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="support.html"><h2>Support</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="about.html"><h2>Om CleverNest</h2></a></th>
+        </table>
+    </div>
     <div class="content">
-
-        <h1 class="title">
-                Produkter
-        </h1>
-
+        <h1 class="title">Produkter</h1>
         <div class="careousel-container">
             <div class="careousel-content hidden">
                 <img src="img/products/gateway.jpg" alt="Clevernest gateway" class="careousel-image">
@@ -55,38 +52,25 @@
                 </p>
             </div>
         </div>
-
-        <ul id="pakkeListe">
-            <li>
-                <img src="img/products/gateway.jpg" class="image" alt="gateway">
-                <div class="content">
-                    <b>Gateway</b><br>
-                    Dette er hjernen til CleverNest, og gjør at alle produktene dine fungerer sømløst sammen.
-                </div>
-            </li>
-            <li>
-                <img src="img/products/keypad.jpg" class="image" alt="keypad">
-                <div class="content">
-                    <b>Keypad</b><br>
-                    Det dette produktet kan du enkelt koble ut alarmen når du kommer hjem. 
-                </div>
-            </li>
-            <li>
-                <img src="img/products/ir-detector.jpg" class="image" alt="irdetector">
-                <div class="content">
-                    <b>IR Detector</b><br>
-                    Med dette produktet kan du få beskjed hvis det blir røykutvikling. 
-                </div>
-            </li>
-            <li>
-                <img src="img/products/door-contact.jpg" class="image" alt="doorcontact">
-                <div class="content">
-                    <b>Door Contact Input</b><br>
-                    Med dette produktet kan du finne ut om uvedkommende har åpnet dører. 
-                </div>
-            </li>
-            </ul>
-            <br><br><br>
+        <table id="pakkeListe">
+            <tr>
+                <td><img src="img/products/gateway.jpg" class="image" alt="gateway"></td>
+                <td class="producttext"><b>Gateway</b><br>Dette er hjernen til CleverNest, og gjør at alle produktene dine fungerer sømløst sammen.</td>
+            </tr>
+            <tr>
+                <td><img src="img/products/keypad.jpg" class="image" alt="keypad"></td>
+                <td class="producttext"><b>Keypad</b><br>Med dette produktet kan du enkelt koble ut alarmen når du kommer hjem.</td>
+            </tr>
+            <tr>
+                <td><img src="img/products/ir-detector.jpg" class="image" alt="irdetector"></td>
+                <td class="producttext"><b>IR Detector</b><br>Med dette produktet kan du få beskjed hvis det blir røykutvikling.</td>
+            </tr>
+            <tr>
+                <td><img src="img/products/door-contact.jpg" class="image" alt="doorcontact"></td>
+                <td class="producttext"><b>Door Contact Input</b><br>Med dette produktet kan du finne ut om uvedkommende har åpnet dører.</td>
+            </tr>
+        </table>
+        <br><br><br>
     </div>
     <footer>
         <table id="footertable">

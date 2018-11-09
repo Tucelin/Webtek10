@@ -8,29 +8,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <title>CleverNest</title>
 </head>
-
 <body>
     <!-- Navbar -->
-    <ul class="navbar">
-        <li id="home-element"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></li>
-        <li><a href="packages.html">
-                <h2>Produkter</h2>
-            </a></li>
-        <li><a href="prices.html">
-                <h2>Priser</h2>
-            </a></li>
-        <li><a href="providers.html">
-                <h2>Leverandører</h2>
-            </a></li>
-        <li><a href="support.html">
-                <h2>Support</h2>
-            </a></li>
-        <li><a href="about.html">
-                <h2>Om CleverNest</h2>
-            </a></li>
-    </ul>
+    <div class=navbarbackground>
+        <table class="navbar">
+            <th class="navbarelement"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="packages.html"><h2>Produkter</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="prices.html"><h2>Priser</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="providers.html"><h2>Leverandører</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="support.html"><h2>Support</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="about.html"><h2>Om CleverNest</h2></a></th>
+        </table>
+    </div>
     <div class="content">
-        <div class="content">
+        <div>
             <h1>CleverNest</h1>
             <div class="home__content-section">
                 <a href="prices.html">
@@ -53,7 +44,6 @@
             <div class="home__content-section">
                 <a href="support.html">
                     <h2 class="home__content-section--heading">Trenger du hjelp med CleverNests løsninger?</h2>
-
                     <p>
                         <img class="home__image home__image--right-side" src="img/logo_250px.png" alt="Noen av CleverNest sine produkter.">
                         På denne siden finner du bruksanvisninger og dokumentasjon for CleverNest sine løsninger. Hvis du ikke finner hjelpen du trenger er også brukerstøtte tilgjengelig.
@@ -62,6 +52,7 @@
             </div>
         </div>
     </div>
+    <br><br>
     <footer>
         <table id="footertable">
             <tr>

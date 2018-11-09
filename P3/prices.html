@@ -10,14 +10,16 @@
 </head>
 <body>
     <!-- Navbar -->
-    <ul class="navbar">
-        <li id="home-element"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></li>
-        <li><a href="packages.html"><h2>Produkter</h2></a></li>
-        <li id="currentpage"><a href="prices.html"><h2>Priser</h2></a></li>
-        <li><a href="providers.html"><h2>Leverandører</h2></a></li>
-        <li><a href="support.html"><h2>Support</h2></a></li>
-        <li><a href="about.html"><h2>Om CleverNest</h2></a></li>
-    </ul>
+    <div class=navbarbackground>
+        <table class="navbar">
+            <th class="navbarelement"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="packages.html"><h2>Produkter</h2></a></th>
+            <th class="navbarelement" id="currentpage"><a class="navbarlink" href="prices.html"><h2>Priser</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="providers.html"><h2>Leverandører</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="support.html"><h2>Support</h2></a></th>
+            <th class="navbarelement"><a class="navbarlink" href="about.html"><h2>Om CleverNest</h2></a></th>
+        </table>
+    </div>
     <div class="content">
         <h1>Priser</h1>
         <div class="resources">
@@ -34,23 +36,22 @@
                 <tr>
                     <td class="priscelle">Totalpakke</td>
                     <td class="priscelle">999,-</td>
-                    <td colspan="4" class="priscelle check"><img src="img/check.png" height="50" width="50" alt="included"></td>
+                    <td colspan="4" class="priscelle check"><img class=pricepic src="img/check.png" alt="included"></td>
                 </tr>
                 <tr>
                     <td class="priscelle">Grunnpakke</td>
                     <td class="priscelle">599,-</td> 
-                    <td colspan="2" class="priscelle check"><img src="img/check.png" height="50" width="50" alt="included"></td> 
-                    <td colspan="2" class ="priscelle cross"><img src="img/cross.png" height="50" width="50" alt="not included"></td> 
+                    <td colspan="2" class="priscelle check"><img class="pricepic" src="img/check.png" alt="included"></td> 
+                    <td colspan="2" class ="priscelle cross"><img class="pricepic" src="img/cross.png" alt="not included"></td> 
                 </tr>
             </table>
         </div>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar quam ipsum, sed posuere arcu fermentum sit amet. Integer interdum, libero a consectetur commodo, tellus ante iaculis eros, sit amet tincidunt turpis eros et magna. Sed id dolor arcu. Curabitur ornare ipsum sit amet leo mollis aliquam. Ut non rhoncus est. Aliquam blandit odio ante, eget euismod elit cursus ac. Pellentesque ligula eros, pulvinar eu mattis nec, ornare non ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate vulputate est, vitae tristique justo tristique at. Donec tristique nulla eu urna vestibulum sagittis. Ut non venenatis odio. Pellentesque eleifend non enim eu venenatis.
+            Her ser du en oversikt over hvilke pakker vi tilbyr. Grunnpakken er vårt rimeligste alternativ, og består av en såkalt Gateway og en Keypad. Med den kan du enkelt holde oversikt over status i de boliger du har kontroll på, og skru av eventuelle alarmer. Disse enhetene kan tenkes på som hjernen og kontrollenheten i systemet.
         </p>
         <p>
-            Ut venenatis, quam eu vestibulum finibus, ex arcu eleifend elit, ut fringilla mauris dolor non urna. Nulla venenatis velit vel ex iaculis, et aliquam odio eleifend. Curabitur suscipit ac purus non molestie. Nulla nec venenatis arcu. Curabitur ac mi sollicitudin tortor tincidunt aliquam eget non felis. Donec tempus vulputate augue eget imperdiet. Nullam eleifend velit sed maximus pretium. Morbi auctor lectus erat, a dictum felis fringilla quis. Etiam sit amet nunc rutrum, consequat nibh ac, hendrerit nulla. Sed eu rhoncus nisi.
+            Totaltpakken er et mer komplett alternativ, hvor både identifisering av røytutvikling og hvilke dører som uvedkommende har åpnet inngår. Dette gjøres ved hjelp av en Infrared Tracker og en Door Contact Input. Disse brukes til å detektere røykutvikling ved hjelp av en infrarød sensor, og å registrere åpnede dører ved hjelp av magnetkontakter.
         </p>
-        <br><br>
     </div>
     <footer>
         <table id="footertable">

@@ -1,37 +1,46 @@
+html {
+    overflow-y: scroll;
+}
+
 body{
     margin: 0;
     font-family: 'Montserrat', 'Arial', sans-serif;
     /* Lurer på om Montserrat ikke kommer med chrome vanligvis, bør diskuteres.*/
 }
 
-h1 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .content {
     margin-right: auto;
     margin-left: auto;
     max-width: 900px;
+    padding-left: 5px;
 }
 
-
 li{
-    list-style: none;
-    display:inline-block; /* Denne linja gjør at liste-elementene kommer på samme1 linje 
-    (som er vanlig i en navbar) men gjør at vi ikke kan angi bredde eller høyde på elementene i seg 
-    selv, men vi kan fortsatt endre på størrelsen på ting inni dem, som tekst og bilder (se #whitelogo)*/
-    padding-left: 10px;
-    padding-right: 10px;  
+    display: inline-block;
+    padding: 10px;
+}
+
+/* navbar */
+
+.navbarbackground{
+    background-color: #1C93B8;
 }
 
 .navbar {
-    background-color: #1C93B8;
-    margin-top: 0;
-    padding-left: 14%;
-    padding-right: 12%;
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    white-space: nowrap;
 }
+
+.navbarelement {
+    font-size: 12px;
+    width: 15%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* end navbar */
 
 /* footer */
 
@@ -39,43 +48,46 @@ footer {
     background-color: #1C93B8;
     position: fixed; 
     bottom: 0; 
-    line-height: 15px; 
     color: white; 
-    height: 40px; 
     width: 100%; 
-    left:0;
 }
 
 #footertable {
     width: 100%;
+    white-space: nowrap;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .footercell {
-    border: none;
-    padding: 10px;
+    font-size: 15px;
 }
 
 #footerleft {
-    width: 40%;
-    text-align: left;
+    padding-left: 15px;
 }
 
 #footercenter {
     width: 20%;
     text-align: center;
+    padding-left: 5px;
 }
 
 #footerright {
     width: 40%;
     text-align: right;
+    padding-right: 15px;
 }
 
 /* end footer */
 
-a:link { color: white; text-decoration: none; }
-a:visited { color:white; text-decoration: none; }
-a:hover { color:white; text-decoration: underline; }
-a:active { color:white; text-decoration: underline; }
+a.navbarlink:link { color: white; text-decoration: none; }
+a.navbarlink:visited { color:white; text-decoration: none; }
+a.navbarlink:hover { color:white; text-decoration: underline; }
+a.navbarlink:active { color:white; text-decoration: underline; }
+
+a.textlink:link {color: #1C93B8; text-decoration: underline;}
+a.textlink:visited {color: #1C93B8; text-decoration: underline;}
 
 #currentpage{
     background-color: rgb(120, 182, 201);
@@ -83,17 +95,9 @@ a:active { color:white; text-decoration: underline; }
 
 #whitelogo {
     height: 35px;
-    /* Har noen problemer med å sette bildet riktig, med riktig størrelse osv sånn at det ikke fucker med andre ting. -VH*/
-}
-#home-element {
-    vertical-align: middle;
 }
 
-.title {
-    text-align: center;
-}
-
-.resources {
+h1, .resources {
     text-align: center;
 }
 
@@ -120,6 +124,11 @@ a:active { color:white; text-decoration: underline; }
     height: 30px;
 }
 
+.downloadpic {
+    height: 70px;
+    width: 70px;
+}
+
 /*end support table */
 
 .provimg {
@@ -135,6 +144,7 @@ textarea {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 }
 
 #postnummerinput {
@@ -163,9 +173,8 @@ textarea {
 /* pristabell */
 
 #pakketabell {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 #pakketabell, .prisheader, .priscelle {
@@ -184,6 +193,11 @@ textarea {
 
 .prisheader {
     width: 160px;
+}
+
+.pricepic {
+    width: 50px;
+    height: 50px;
 }
 
 #tabellpris {
@@ -237,23 +251,8 @@ ul {
 
 /* end supportform */
 
-#pakkeListe {
-    list-style: none;
-    display: block;
-}
-
-#pakkeListe > li {
-    height: 200px;
-    width: 900px;
-}
-
-#pakkeListe > li > .image{
-    width: 200px; height: 200px;
-    float:left;
-}
-
-#pakkeListe > li > .content{
-    margin-top: 70px;
+.image{
+    width: 200px; 
     height: 200px;
 }
 
@@ -262,10 +261,12 @@ ul {
 .home__content-section {
     clear: both;
     padding: 1em;
-    margin-bottom: 20px;
 }
 
-.home__content-section > a { color: black; text-decoration: none; }
+.home__content-section > a { 
+    color: black; 
+    text-decoration: none; 
+}
 
 .home__content-section--heading {
     text-align: center;
