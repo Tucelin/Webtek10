@@ -5,7 +5,7 @@ html {
 body{
     margin: 0;
     font-family: 'Montserrat', 'Arial', sans-serif;
-    /* Lurer på om Montserrat ikke kommer med chrome vanligvis, bør diskuteres.*/
+    line-height: 1.5;
 }
 
 .content {
@@ -20,9 +20,19 @@ li{
     padding: 10px;
 }
 
-/* navbar */
+a.textlink:link {color: #1C93B8; text-decoration: underline;}
+a.textlink:visited {color: #1C93B8; text-decoration: underline;}
 
-.navbarbackground{
+h1, .resources {
+    text-align: center;
+}
+
+ul {
+    padding: 0px;
+}
+
+/* navbar */
+#insertingnavbar {
     background-color: #1C93B8;
 }
 
@@ -40,10 +50,21 @@ li{
     padding-left: 5px;
 }
 
+a.navbarlink:link { color: white; text-decoration: none; }
+a.navbarlink:visited { color:white; text-decoration: none; }
+
+.navbarelement:hover {background-color: rgb(120, 182, 201); }
+
+#currentpage{
+    background-color: rgb(120, 182, 201);
+}
+
+#whitelogo {
+    height: 50px;
+}
 /* end navbar */
 
 /* footer */
-
 footer {
     background-color: #1C93B8;
     position: fixed; 
@@ -78,31 +99,9 @@ footer {
     text-align: right;
     padding-right: 15px;
 }
-
 /* end footer */
 
-a.navbarlink:link { color: white; text-decoration: none; }
-a.navbarlink:visited { color:white; text-decoration: none; }
-a.navbarlink:hover { color:white; text-decoration: underline; }
-a.navbarlink:active { color:white; text-decoration: underline; }
-
-a.textlink:link {color: #1C93B8; text-decoration: underline;}
-a.textlink:visited {color: #1C93B8; text-decoration: underline;}
-
-#currentpage{
-    background-color: rgb(120, 182, 201);
-}
-
-#whitelogo {
-    height: 35px;
-}
-
-h1, .resources {
-    text-align: center;
-}
-
 /* support table */
-
 #supporttable {
     margin-right: auto;
     margin-left: auto;
@@ -128,9 +127,9 @@ h1, .resources {
     height: 70px;
     width: 70px;
 }
-
 /*end support table */
 
+/* providers */
 .provimg {
     width: 150px;
 }
@@ -169,9 +168,9 @@ textarea {
 #providerimage {
     display: none;
 }
+/* end providers */
 
 /* pristabell */
-
 #pakketabell {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -203,12 +202,7 @@ textarea {
 #tabellpris {
     width: 70px;
 }
-
 /* end pristabell */
-
-ul {
-    padding: 0px; /*lagt til fordi en rar padding på resourcene under Support gjorde at det ikke var sentrert */
-}
 
 /* supportform */
 
@@ -251,13 +245,8 @@ ul {
 
 /* end supportform */
 
-.image{
-    width: 200px; 
-    height: 200px;
-}
 
-/* Start of styling for "home.html" */
-
+/* home.html */
 .home__content-section {
     clear: both;
     padding: 1em;
@@ -285,9 +274,13 @@ ul {
     float: left;
 }
 
-/* End of styling for "home.html" */
+/* End home.html */
 
-/* Start of styling for careousel on "packages.html" */
+/* packages.html */
+.image{
+    width: 200px; 
+    height: 200px;
+}
 
 .careousel-container {
     width: 100%;
@@ -316,3 +309,4 @@ ul {
 .active-slide{
     display: block;
 }
+/* End of styling for careousel on "packages.html" */

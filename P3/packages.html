@@ -10,16 +10,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <div class=navbarbackground>
-        <table class="navbar">
-            <th class="navbarelement"><a href="home.html"><img src="img/logo_white.png" alt="CleverNest logo, white" id="whitelogo"></a></th>
-            <th class="navbarelement" id="currentpage"><a class="navbarlink" href="packages.html"><h2>Produkter</h2></a></th>
-            <th class="navbarelement"><a class="navbarlink" href="prices.html"><h2>Priser</h2></a></th>
-            <th class="navbarelement"><a class="navbarlink" href="providers.html"><h2>Leverandører</h2></a></th>
-            <th class="navbarelement"><a class="navbarlink" href="support.html"><h2>Support</h2></a></th>
-            <th class="navbarelement"><a class="navbarlink" href="about.html"><h2>Om CleverNest</h2></a></th>
-        </table>
-    </div>
+    <div id=insertingnavbar></div>
     <div class="content">
         <h1 class="title">Produkter</h1>
         <div class="careousel-container">
@@ -75,12 +66,13 @@
     <footer>
         <table id="footertable">
             <tr>
-                <td class="footercell" id="footerleft">post@clevernest.no</td>
+                <td class="footercell" id="footerleft"><a class="navbarlink" href="mailto:post@clevernest.no">post@clevernest.no</a></td>
                 <td class="footercell" id="footercenter">Produkter</td>
                 <td class="footercell" id="footerright"><script src="./scripts/copyrightYear.js"></script></td>
             </tr>
         </table>
     </footer>
+<script src=./scripts/insertingHTML.js></script>
 <script src="./scripts/careousel.js"></script>
 </body>
 </html>
