@@ -58,7 +58,6 @@ let provideprovider = () => {
         if (document.getElementById("postnummerinput").value >= providers[i].min && document.getElementById("postnummerinput").value <= providers[i].max){
             document.getElementById("providerimage").setAttribute("src", "img/providers/" + providers[i].provider + providers[i].extension) 
             document.getElementById("providerimage").style.display = "inline"
-            console.log("Clicked")
         }
 
     }
