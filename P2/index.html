@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
+    <meta name="viewport" content="P2">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <title>CleverNest P2</title>
 </head>
@@ -62,7 +62,7 @@
         <header>
             <h2>Navigation structure</h2>
         </header>
-        <img src="img/CNSitemap.png" id="sitemap">
+        <img src="img/CNSitemap.png" id="sitemap" alt="sitemap.png">
         <p>
             This is an attempt to illustrate a site organized in a clique style, with a small modification. The clique part is simple enough: every site links to every other site, through a navigation bar. Beyond that, we are considering a so-called ”splash screen” – a sleek, well-designed, minimalistic welcome screen with the CleverNest logo and perhaps a slogan. That will link to the home.html site, which will then link to all other sites (clique). So you could call it a ”pseudo clique” style with a linear beginning, which is marked in green on the diagram. The clique part is marked in blue. This seems to us as a fashionable and stylish way of organizing a site and gives a modern first impression. Depending on time and circumstance, or even if we are not happy with how it looks, we might scrap this idea and rather focus on a standard clique organization of the site. The splash idea is our own and it is not given to us by the client, so it is not an integral part of the site at all. The clique structure makes sense for our website because visitors might want to check on any of the subsections as soon as they enter: it is pointless to have a linear structure where the customer/potential customer needs to progress through several checkpoints to find the info they are interested in.
             <br>
@@ -84,6 +84,7 @@
             <br>
             <br>
             The color scheme of the site will be based on the colors used in the CleverNest logo. This creates a consistent and recognizable branding for the site, which is also one of the requirements from P1.
+        </p>
             <ul>
                 <li>Background of pages is white</li>
                 <li>Navbar and footer color: HEX #1C93B8. This color is from the CleverNest logo.</li>
@@ -91,18 +92,22 @@
                 <li>When hovering the mouse over a link in the navbar, the box will change to the same color: HEX #59AAC4.</li>
                 <li>Link color: HEX #00A588. This color is from the CleverNest logo.</li>
             </ul>
+        <p>
             The font, sizes and line heights are chosen primarily to make text easily legible, but also to create a feeling of space on the website that makes it easy for the content to draw attention.
+        </p>
             <ul>
                 <li>Font: Montserrat. This is similar to the font used in other marketing materials from CleverNest. Back-up font is Arial.</li>
-                <li>Font size:</li>
-                <ul>
-                    <li>Navbar 18pt</li>
-                    <li>Footer 12pt</li>
-                    <li>Paragraph header 20pt</li>
-                    <li>Other text 16pt</li>
-                </ul>
+                <li>Font size:
+                    <ul>
+                        <li>Navbar 18pt</li>
+                        <li>Footer 12pt</li>
+                        <li>Paragraph header 20pt</li>
+                        <li>Other text 16pt</li>
+                    </ul>
+                </li>
                 <li>Line-height: 1,5</li>
             </ul>
+        <p>
             A couple of features of the design ensures that the page works on a variety of screen sizes. First, the content of each page is relatively simple. There will not be a lot of layered elements, or elements where it is critical that they always remain in the exact same position in relation to each other. This makes the site work well even when some boxes/elements are reordered for smaller screen sizes. We will also use max-width for containing boxes, so they will not overflow the viewport when the screen size is smaller. Because our audience largely consists of homeowners with some competence and interest in technology, we assume that most of them own a device other than a mobile phone to view the website. Therefore, we will not guarantee that the design works flawlessly on screens as small as a typical mobile phone.
         </p>
     </section>
@@ -129,14 +134,13 @@
             <br>
             <br>
             The sections will link to, starting from the top
+        </p>
             <ul>
                 <li>Pakker</li>
                 <li>Finn din leverandør</li>
                 <li>Support</li>
             </ul>
             <img src="img/CNHome.PNG" alt="CleverNest Home">
-        </p>
-
         <h3>Packages.html</h3>
         <p>
             The packages page will list the package solutions available for sale with descriptions of each of the packages. We will have short paragraphs of text and illustrative photographs of distinguishing features for each package. We will have an image carousel on this page in order to demonstrate the product. It is hard for us to know what sort of assets will be available, if any, so we will adapt to whatever we are handed. If necessary we will create some simplistic stand-ins, but we are assuming some sort of concept art is available.
@@ -146,6 +150,7 @@
             <br>
             <br>
             The page will consist of 3 main sections:
+        </p>
             <ul>
                 <li>The image carousel will be at the top of the page and span the width of the main column. Below the actual image will be a text which can change together with the image.</li>
                 <li>Next is a section presents information about the basic package. This will be the longest text on the page. The accompanying image will break the text in the top left corner of the section.</li>
@@ -158,7 +163,6 @@
             <ul>
                 <li>listing the different product packages and a short description for each</li>
             </ul>
-        </p>
 
         <h3>Providers near you - Providers.html</h3>
         <p>
@@ -201,6 +205,7 @@
         </header>
         <p>
             We intend to fulfill the minimum requirements for the application in this way:
+        </p>
             <ol>
                 <li>A Javascript function that takes in the users postal code and returns a CleverNest provider in their area. The intent is to give the impression that a relevant electricity provider is given, but in reality, we will have an array of actual providers with each of them assigned to a range of postal codes. </li>
                 <li>A Javascript function that will scroll through a set of pictures (image carousel) with links to the other pages on the website. We can also put news in this carousel.</li>
@@ -208,7 +213,6 @@
                 <li>A Javascript function to download the catalog where the user can see descriptions of specific products.</li>
                 <li>A Javascript function to automatically update the copyright year in the footer to current year.</li>
             </ol>
-        </p>
     </section>
     <hr>
     <section class="content">
@@ -230,16 +234,18 @@
             <li>about.html</li>
             <li>support.html</li>
             <li>images</li>
-            <ul>
-                <li>images of elecricity providers</li>
-                <li>images of packages</li>
-                <li>Images of employees</li>
-                <li>checkmark.png</li>
-                <li>cross.png</li>
-                <li>splash_background.png</li>
-                <li>splash_logo.png</li>
-                <li>logo.png</li>
-            </ul>
+            <li>
+                <ul>
+                    <li>images of elecricity providers</li>
+                    <li>images of packages</li>
+                    <li>Images of employees</li>
+                    <li>checkmark.png</li>
+                    <li>cross.png</li>
+                    <li>splash_background.png</li>
+                    <li>splash_logo.png</li>
+                    <li>logo.png</li>
+                </ul>
+            </li>
             <li>main.css</li>
             <li>scripts.js</li>
         </ul>
