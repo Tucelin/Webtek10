@@ -321,21 +321,4 @@ textarea {
     display: block;
 }
 
-#prevbutton {
-    float: left;
-    height: 450px;
-    border: #1C93B8 solid 2px;
-    background-color: white;
-}
-#nextbutton {
-    float: right;
-    height: 450px;
-    border: #1C93B8 solid 2px;
-    background-color: white;
-}
-
-#prevbutton:hover, #nextbutton:hover {
-    background-color: lightgrey;
-}
-
 /* End of styling for careousel on "packages.html" */
