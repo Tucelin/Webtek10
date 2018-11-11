@@ -13,6 +13,7 @@ body{
     margin-left: auto;
     max-width: 900px;
     padding-left: 5px;
+    padding-right: 5px;
 }
 
 li{
@@ -55,13 +56,17 @@ a.navbarlink:visited { color:white; text-decoration: none; }
 
 .navbarelement:hover {background-color: rgb(120, 182, 201); }
 
-#currentpage{
-    background-color: rgb(120, 182, 201);
-}
-
 #whitelogo {
     height: 50px;
 }
+
+/* css for gammel navbar
+
+#currentpage{
+    background-color: rgb(120, 182, 201);
+}
+ end css for gammel navbar */
+
 /* end navbar */
 
 /* footer */
