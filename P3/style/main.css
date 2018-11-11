@@ -312,7 +312,7 @@ textarea {
 
 .careousel-text {
     text-align: center;
-    min-height:  height: 4em; /* Used min-height instead of height to accomondate smaller screens. */
+    min-height: 4em; /* Used min-height instead of height to accomondate smaller screens. */
 }
 
 .hidden {
