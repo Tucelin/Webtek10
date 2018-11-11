@@ -60,6 +60,12 @@ a.navbarlink:visited { color:white; text-decoration: none; }
     height: 50px;
 }
 
+@media (max-width: 450px){
+    #footertable{
+        display: none;
+    }
+}
+
 /* css for gammel navbar
 
 #currentpage{
