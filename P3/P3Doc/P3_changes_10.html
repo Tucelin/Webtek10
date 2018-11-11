@@ -38,12 +38,24 @@
             This section details the changes that have been made to the final website compared to the original design laid out in the design document.
 
             <h3>Navigation structure</h3>
-                We did not make a splash screen. This was an interesting idea that we included in the original design, but because we prioritized refining the design and functionality of the more important pages of the site.
+                We did not make a splash screen. This was an interesting idea that we included in the original design, 
+                but because we prioritized refining the design and functionality of the more important pages of the site.
             <br>
             <br>
             
             <h3>Page layout and appearance</h3>
-
+                Due to our understanding of the modularity requirement, we had to rework our navbar so that it would be modular, 
+                and in doing so, we lost a bit of intended functionality. We intended for the page the user is currently visiting 
+                to be lit up on the navbar to clearly indicate the users whereabouts, but this functionality was hard to implement 
+                in our new, general, modular solution. We ended up putting a page indicator at the bottom of the page in the footer.
+                <br>
+                <br>
+                For the navbar, we added some empty space on each side for larger screens. This looks better than dragging it all 
+                the way out to the sides. We did not prioritize implementing that the navbar hides when scrolling down the page. 
+                This is not so important because most of the pages are not scrollable on the most common screen sizes
+                The font sizes are not the same that were specified in the original design. The font sizes have been 
+                adjusted based on what we found to work best when experimenting during the implementation.
+                
             <br>
             <br>
 
@@ -53,31 +65,34 @@
             <br>
 
             <h3>Packages.html</h3>
-            In principle, there are no changes to the packages page. Because we were provided less text from the client than we expected, the overall look of the page is different than the mockup. For the same reason, we have not included a separate text about the basic package.
+            In principle, there are no changes to the packages page. Because we were provided less text from the client than we expected, 
+            the overall look of the page is different than the mockup. For the same reason, we have not included a separate text about the basic package.
             <br>
             <br>
 
             <h3>Providers.html</h3>
-            The input field for the postal code was moved above the array of provider logos. We decided it makes more sense to put the widget the user will interact with near the top of the page, as it is the central feature of the page.
+            The input field for the postal code was moved above the array of provider logos. We decided it makes more sense to put the 
+            widget the user will interact with near the top of the page, as it is the central feature of the page.
             <br>
             <br>
 
             <h3>Prices.html</h3>
-                There was some inconsistency between the textual description and the mockup for this page in the design. The final implementation is in line with the textual description.
-                We also added some explanatory text below the price table because we found the user would need some more explanation to understand the price table better.
+                There was some inconsistency between the textual description and the mockup for this page in the design. The final implementation 
+                is in line with the textual description. We also added some explanatory text below the price table because we found the user would 
+                need some more explanation to understand the price table better.
             <br>
             <br>
 
             <h3>About.html</h3>
-                The client requested that we not include information about employees. Because the company is in a start-up phase, some details like address are not decided yet and are not included.
+                The client requested that we not include information about employees. Because the company is in a start-up phase, 
+                some details like address are not decided yet and are not included.
             <br>
             <br>
 
             <h3>Support.html</h3>
                 The visual design of the download links and contact form was tweaked and improved during the implementation process.
                 The download functionality is implemented as a regular HTML-link instead of through Javascript. With so few documents available for download, 
-            
-
+        
         </p>
     </section>
     <hr>
@@ -88,8 +103,7 @@
         <p>
             The minimum Javascript requirements were completed as follows:
             <ul>
-                <li>Vegard Ekra made the fake email sending for support.html</li>
-                <li>Vegard Hesselberg made the widget to search for and display your local provider for providers.html</li>
+                <li>Vegard Hesselberg made the widget to search for and display your local provider for providers.html as well as the fake email sending for support.html</li>
                 <li>Kristoffer Lande made the code for the footer that automatically changes the copyright year to the current year.</li>
                 <li>Erlend Espeland made the image carousel for packages.html</li>
             </ul>
@@ -98,11 +112,44 @@
     <hr>
     <section class="content">
         <header>
-            <h2>Who worked on what</h2>
+            <h2>Work distribution</h2>
         </header>
         <p>
-            In the end, everyone ended up working on a lot of different parts of the website, seeing new possibilities, and implementing changes after discussing in the group. We also got feedback from running tests, which not always needed the “correct” person to implement the change, if it was something that was obvious that we should include and/or was an easy fix.
-
+            In the end, everyone ended up working on a lot of different parts of the website, seeing new possibilities, and implementing changes 
+            after discussing in the group. We also got feedback from running tests, which not always needed the “correct” person to implement 
+            the change, if it was something that was obvious that we should include and/or was an easy fix. 
+        </p>
+        <p>
+            A more specific distribution is found below:
+            <br>
+            <br>
+            Vegard Ekra did the following:
+            <ul>
+                <li>Make Prices.html</li>
+                <li>Make About.html</li>
+                <li>Translate old navbar into something modular (insertHTML.js)</li>
+                <li>Recode old navbar and old footer into something that changes responsively when window is resized</li>
+            </ul>
+            Vegard Hesselberg did the following:
+            <ul>
+                <li>Make the initial design drawings</li>
+                <li>Make the javascript code for the providers page (findProviders.js) as well as the Provider.html page</li>
+                <li>Make the javascript code for the support page (support.js) as well as the Support.html page</li>
+            </ul>
+            Kristoffer Lande did the following:
+            <ul>
+                <li>Provide logos and supplementary assets from the client.</li>
+                <li>Make Packages.html</li>
+                <li>Make copyrightYear.js</li>
+            </ul>
+            Erlend Espeland did the following:
+            <ul>
+                <li>Make Home.html</li>
+                <li>Make the image carousel found on the packages/products page (careousel.js)</li>
+                <li>Make product-collection.png and provider_logos.png based on pictures provided by the client</li>
+                <li>Designed navbar and footer</li>
+                <li>Make the questions for the questionnaire</li>
+            </ul>
         </p>
     </section>
     <hr>
@@ -110,141 +157,15 @@
         <header>
             <h2>Modularity requirement</h2>
         </header>
-            
-        <br>
-        <br>
-
-    </section>
-    <hr>
-    
-    <section class="content">
-        <header>
-            <h2>DON'T KNOW THE TITLE FOR THIS PART</h2>
-        </header>
-        
-        </ul>
-        <table>
-            <tr>
-                <th><strong></strong></th>
-                <th><strong></strong></th>
-                <th><strong></strong></th>
-                <th><strong></strong></th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td><td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
+            Modularity was hard to implement in a simple way. We ended up injecting the code using JavaScript with the id-selector to get 
+            the navbar modular. The html-code used for the the navbar before we switched to modular is still included in the HTML files as 
+            comments. The original solution included a lighter color around the current page in the navbar to indicate what page the user 
+            is on. This functionality was lost with the modular implementation. Vegard Ekra translated the existing navbar into the modular 
+            solution we’re delivering.
+            <br>
+            We used the same CSS-file for the entire project, as advised in the assignment text.
+            <br>
+            The only Javascript function used across several pages is copyrightYear.js. It is defined in one common file for all pages.
     </section>
 </body>
 </html>
