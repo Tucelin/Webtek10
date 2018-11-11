@@ -60,6 +60,12 @@ a.navbarlink:visited { color:white; text-decoration: none; }
     height: 50px;
 }
 
+@media (max-width: 450px){
+    #footertable{
+        display: none; /* Removes the footer when the screen is too small. */ 
+    }
+}
+
 /* css for gammel navbar
 
 #currentpage{
@@ -314,4 +320,5 @@ textarea {
 .active-slide{
     display: block;
 }
+
 /* End of styling for careousel on "packages.html" */
